@@ -36,3 +36,8 @@ export const list=()=>
 {
   return  EmployeeValue;
 }
+
+export const read=(index)=>
+{
+    return EmployeeValue[index];
+}
