@@ -3,6 +3,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import { list } from "./Employee Value"
 import { Register } from "./empolyeeregister"
 import { Reading } from "./Read"
+import "bootstrap-icons/font/bootstrap-icons.css"
 
 export const Homepage=()=>
 {
@@ -96,7 +97,7 @@ export const Homepage=()=>
                                              setPos(ind)
                                          }
                                     }>
-                                        Read
+                                        <i class="bi bi-book"></i>
                                     </button>
 
                                 </td>
