@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import { FetchExact, list } from "./Employee Value"
+import { FetchExact, list, remove } from "./Employee Value"
 import { Register } from "./empolyeeregister"
 import { Reading } from "./Read"
 import "bootstrap-icons/font/bootstrap-icons.css"
@@ -125,6 +125,14 @@ export const Homepage=()=>
                                          }
                                     }>
                                         Update
+                                    </button>
+                                    <button className="btn btn-outline-info" onClick={
+                                         ()=>
+                                         {
+                                            setTemparray(remove(ind))
+                                         }
+                                    }>
+                                        Delete
                                     </button>
 
                                 </td>

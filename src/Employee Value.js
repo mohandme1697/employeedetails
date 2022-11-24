@@ -55,3 +55,12 @@ export const alter=(data,place)=>
 {
     EmployeeValue[place]=data;
 }
+
+export const remove=(index)=>
+{
+    EmployeeValue=EmployeeValue.filter((d,i)=>
+    {
+        return i!==index
+    })
+    return EmployeeValue
+}
