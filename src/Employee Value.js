@@ -41,3 +41,17 @@ export const read=(index)=>
 {
     return EmployeeValue[index];
 }
+
+export const FetchExact=(name)=>
+{
+    const temp=EmployeeValue.filter((element)=>
+    {
+        return element.empName===name;
+    })
+    return temp[0];
+}
+
+export const alter=(data,place)=>
+{
+    EmployeeValue[place]=data;
+}
